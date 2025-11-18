@@ -189,5 +189,9 @@ class PaperTrader:
                 time.sleep(10)
 
 if __name__ == "__main__":
+    # 1. Start the Web Server FIRST (so Render sees the port)
+    keep_alive()
+    
+    # 2. Then start the Bot
     bot = PaperTrader()
     bot.run()
