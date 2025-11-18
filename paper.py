@@ -148,7 +148,7 @@ class PaperTrader:
 
                 # Print Status Bar
                 status_symbol = "🟩" if pos == "LONG" else "🟥" if pos == "SHORT" else "⬜"
-                print(f"{status_symbol} Price: {price:.2f} | Ch: {lower:.1f}-{upper:.1f} | EMA: {ema:.1f} | Bal: ${self.state['balance']:.0f}")
+                print(f"{status_symbol} Price: {price:.2f} | Ch: {lower:.1f}-{upper:.1f} | EMA: {ema:.1f} | Bal: ${self.state['balance']:.0f}", flush=True)
 
                 # 2. EXIT LOGIC
                 if pos == "LONG":
