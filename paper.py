@@ -1,7 +1,7 @@
+import os
 import yfinance as yf
 import pandas as pd
 import time
-import os
 import json
 from datetime import datetime
 from flask import Flask
